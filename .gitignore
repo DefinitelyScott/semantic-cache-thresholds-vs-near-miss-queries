@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Regenerable experiment outputs (the README figure lives in docs/ and is committed)
+outputs/
+
+# Environment / secrets
+.env
+
+# OS
+.DS_Store

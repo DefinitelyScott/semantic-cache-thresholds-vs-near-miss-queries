@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-cache-thresholds-vs-near-miss-queries"
+version = "0.1.0"
+description = "Testing a similarity-threshold LLM response cache against near-miss queries, not just unrelated ones."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Scott Dunay" }]
+dependencies = []
+
+[project.optional-dependencies]
+figure = ["matplotlib>=3.8,<4"]
+embeddings = ["openai>=1.40,<2"]
+dev = ["pytest>=8.0,<9"]
+
+[tool.setuptools]
+packages = ["cache_eval"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]
